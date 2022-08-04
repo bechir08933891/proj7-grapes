@@ -1,0 +1,91 @@
+/* general setup */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body{
+    background: linear-gradient(90deg,#00d2ff, #3a7bd5);
+    width: 100%;
+    height: 100vh;
+    /* bech nrodohom center */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* tw bech nrodohom te7t b3athehom */
+    flex-direction: column;
+    gap: 2rem;
+}
+h2{
+    color: #333;
+    font-size: 2rem;
+    text-transform: capitalize;
+}
+
+/* inputs */
+.inputs{
+    background: rgba(255, 255, 255, 0.5);
+    padding: 0.7rem;
+    border-radius: 10px;
+    width: 20rem;
+    height: 8rem;
+    /* make all children center  */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+.inputs .data{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 80%;
+}
+.inputs .data input{
+    outline: none;
+    padding: 10px;
+    border: none;
+    color: #333;
+    font-size: 1.2rem;
+    border-bottom: 1px solid crimson;
+    background: transparent;
+}
+.inputs .data button{
+    background: crimson;
+    color: #fff;
+    font-size: 1rem;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+}
+.inputs .data button:hover{
+    background: rgb(220, 20, 103);
+}
+
+/* lists */
+.lists{
+    margin-top: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    /* bech nrodo les childs kol we7ed 3endi width flexible */
+    align-items: flex-start;
+}
+.lists .box{
+    width: 12.5rem;
+    background: rgba(255, 255, 255, 0.5);
+    padding: 0.7rem;
+    border-radius: 0.5rem;
+    text-align: center;
+}
+.lists .box .item{
+    padding: 0.7rem;
+    margin: 0.4rem;
+    cursor: pointer;
+    background: linear-gradient(90deg,#f12711, #f5af19);
+    color: #fff;
+}
